@@ -17,6 +17,9 @@ $(NAME): $(OBJ)
 	$(CC) $(FLAGS) $(OBJ) $(LIBFT) -o $(NAME)
 	@rm -rf *.o
 
+lib:
+	@make -C ./Libft
+
 clean:
 	@rm -rf *.o
 
