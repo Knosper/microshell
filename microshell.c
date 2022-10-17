@@ -14,11 +14,11 @@
 
 int	error(int error)
 {
-	if (error = DATA_ERROR)
+	if (error == DATA_ERROR)
 		printf("data error\n");
-	if (error = DATA_ERROR)
+	if (error == DATA_ERROR)
 		printf("free data error\n");
-	if (error = PARSE_ERROR)
+	if (error == PARSE_ERROR)
 		printf("parsing error\n");
 	return (error);
 }
