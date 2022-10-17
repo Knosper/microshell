@@ -47,7 +47,7 @@ int	parse(t_data **data)
 	t_token	*tmp;
 
 	i = 1;
-	(*data)->token->cmd = ft_strdup((*data)->args[i++]);
+	(*data)->token->cmd = ft_strdup((*data)->args[i]);
 	while (i < (*data)->argc)
 	{
 		tmp = ft_toknew((void *)ft_strdup((*data)->args[i++]));
