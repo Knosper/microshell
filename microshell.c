@@ -89,7 +89,7 @@ int	check_type(char *s)
 		return (PIPE);
 	if (ft_strcmp(s, "cd") == 0)
 		return (CD_CMD);
-	return (EXECV);
+	return (EXECV); //todoo check path like /bin/ && echo/ls/etc
 }
 
 int	parse(t_data **data)
