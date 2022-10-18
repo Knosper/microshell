@@ -18,7 +18,8 @@
 typedef struct s_token
 {
 	char			*cmd;
-	int				join;
+	int				join_left;
+	int				join_right;
 	int				type;
 	struct s_token	*next;
 	//struct s_token	*prev;
