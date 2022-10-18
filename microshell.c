@@ -75,7 +75,8 @@ int	init_data(t_data **data, int argc, char **args, char **env)
 	if (cover_malloc((*data)->token))
 		return (error(MALLOC_ERROR, NULL, NULL));
 	(*data)->token->cmd = NULL;
-	(*data)->token->join = 0;
+	(*data)->token->join_left = 0;
+	(*data)->token->join_right = 0;
 	(*data)->token->next = NULL;
 	(*data)->token->type = 0;
 	return (0);
