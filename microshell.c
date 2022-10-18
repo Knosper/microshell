@@ -133,7 +133,7 @@ int	exec_list(t_data *data)
 		{
 			if (cmd_len != 2)
 				return (error(CD_ARG_ERROR, NULL, NULL));
-			tmp = tmp->next;
+			tmp = tmp->next;  //not covered yet
 			if (chdir(tmp->cmd))
 				return (error(CD_ERROR, NULL, tmp->cmd));
 		}
