@@ -9,7 +9,7 @@ LIBFT = Libft/libft.a
 
 OBJ = $(SRC:.c=.o)
 
-CC = gcc -g
+CC = cc -g
 
 all: $(NAME)
 

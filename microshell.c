@@ -6,7 +6,7 @@
 /*   By: jjesberg <jjesberg@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 22:12:50 by jjesberg          #+#    #+#             */
-/*   Updated: 2022/10/24 18:34:36 by jjesberg         ###   ########.fr       */
+/*   Updated: 2022/10/24 18:40:08 by jjesberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ int	ft_exec(t_data **data, int i)
 int	start(t_data **data)
 {
 	int	i;
-	int	type;
 
 	i = 0;
 	while ((*data)->args[i] && (*data)->argc > 1)
@@ -127,16 +126,16 @@ int	main(int argc, char *args[], char *env[])
 	if (start(&data))
 	{
 		free_data(&data);
-		return (printf("start error\n"));
+		return (1); //printf("start error\n"));
 	}
 	free_data(&data);
 	/*char *path;
 	path = NULL;
 	path = getcwd(path, 0);
 	printf("path = %s\n", path);
-	free(path);*/
+	free(path);
 	if (TEST)
 		while (1)
-			;
+			;*/
 	return (0);
 }
