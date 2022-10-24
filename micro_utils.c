@@ -6,7 +6,7 @@
 /*   By: jjesberg <jjesberg@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 13:37:47 by jjesberg          #+#    #+#             */
-/*   Updated: 2022/10/21 16:01:22 by jjesberg         ###   ########.fr       */
+/*   Updated: 2022/10/24 18:04:17 by jjesberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,5 @@ int	check_type(char *s)
 		return (PIPE);
 	if (ft_strcmp(s, "cd") == 0)
 		return (CD_CMD);
-	return (EXECV);
+	return (0);
 }
