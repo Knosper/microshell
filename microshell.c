@@ -6,7 +6,7 @@
 /*   By: jjesberg <jjesberg@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:46:39 by jjesberg          #+#    #+#             */
-/*   Updated: 2022/10/25 16:43:39 by jjesberg         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:45:18 by jjesberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ size_t	ft_strlen(char *s)
 		return (i);
 	while (s[i])
 		i++;
-	printf("i = %i\n", (int)i);
 	return (i);
 }
 
