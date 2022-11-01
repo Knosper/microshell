@@ -128,6 +128,7 @@ int	start(t_data **data)
 	while ((*data)->args[i] && (*data)->args[i + 1])
 	{
 		(*data)->args = &(*data)->args[i + 1];
+		i = 0;
 		while ((*data)->args[i] != NULL && strcmp((*data)->args[i], ";") && strcmp((*data)->args[i], "|"))
 			i++;
 		if (!strcmp((*data)->args[0], "cd"))
